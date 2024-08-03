@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0 40px;
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #080710, #080710);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+
+      .thank-you-container {
+        text-align: center;
+        padding: 5%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 500px;
+      }
+
+      .thank-you-message h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #1845ad;
+      }
+
+      .thank-you-message p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+      }
+
+      .home-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #fff;
+        background: #f09819;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+      }
+
+      .home-button:hover {
+        background: #ec8c10;
+      }
+
+      @media (max-width: 768px) {
+        .thank-you-message h1 {
+          font-size: 2em;
+        }
+
+        .thank-you-message p {
+          font-size: 1em;
+        }
+
+        .home-button {
+          padding: 8px 16px;
+          font-size: 0.9em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .thank-you-message h1 {
+          font-size: 1.8em;
+        }
+
+        .thank-you-message p {
+          font-size: 0.9em;
+        }
+
+        .home-button {
+          padding: 6px 12px;
+          font-size: 0.8em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="thank-you-container">
+      <div class="thank-you-message">
+        <h1>Thank You!</h1>
+        <p>
+          We have received your submission.
+          <span style="color: #f09819"
+            >Click button to go back to form page.</span
+          >
+        </p>
+        <a href="/" class="home-button">Back to Home</a>
+      </div>
+    </div>
+  </body>
+</html>
